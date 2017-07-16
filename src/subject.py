@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-import rows
 
 class Subject(object):
     def __init__(self, grade=0, hours=0):

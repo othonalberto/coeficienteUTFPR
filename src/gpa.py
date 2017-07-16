@@ -1,14 +1,10 @@
 #!/usr/bin/env python
 
-import os
-import rows
-import document
-import subject
 
 class Gpa(object):
     def __init__(self):
         self.hours = 0
-        self.gradesTimesHours = [ ]
+        self.gradesTimesHours = []
         self.gpa = 0
 
     def register(self, Document):

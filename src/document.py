@@ -1,9 +1,9 @@
 #!usr/bin/env python
 
-import os
 import rows
 
 TYPES = ['xls', 'xlsx', 'ods']
+
 
 class Document(object):
     def __init__(self, documentName):
@@ -47,4 +47,3 @@ class Document(object):
             self.doc = rows.import_from_ods(self.doc)
         else:
             raise Exception('Can not open the file.')
-
