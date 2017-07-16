@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import rows
 
 class Subject(object):
@@ -7,7 +9,7 @@ class Subject(object):
 
     def set_grade(self, grade):
         self.grade = grade
-    
+
     def set_hours(self, hours):
         self.hours = hours
 
