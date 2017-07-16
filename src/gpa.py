@@ -23,8 +23,10 @@ class Gpa(object):
         self.gradesTimesHours.append(Subject.grade * Subject.hours)
         self.hours += Subject.hours
 
-    def set_gpa(self, Document):
-        self.register(Document)
+    def set_gpa(self, Document=None):
+        if Document is not None:
+            Document.open_doc()
+            self.register(Document)
 
         self.gpa = (sum(self.gradesTimesHours) / (10*self.hours))
 
