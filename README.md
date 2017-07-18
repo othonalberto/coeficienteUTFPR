@@ -12,7 +12,7 @@ Graças a: [Rows](https://github.com/turicas/rows)
 
 Para rodar:
 ```
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 
 python3 ./src/main.py
 ```
