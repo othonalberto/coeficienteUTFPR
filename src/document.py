@@ -30,7 +30,9 @@ class Document(object):
             self.doc_type = doc_type
             self.doc_name = doc_name
         else:
-            raise ValueError('Arquivos do tipo {} não são suportados. '.format(doc_type))
+            raise ValueError(
+                    'Arquivos do tipo {} não são suportados.' .format(doc_type)
+            )
 
     def get_doc_type(self):
         return self.doc_type
