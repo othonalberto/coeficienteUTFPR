@@ -34,12 +34,6 @@ class Document(object):
                     'Arquivos do tipo {} não são suportados.' .format(doc_type)
             )
 
-    def get_doc_type(self):
-        return self.doc_type
-
-    def get_doc_name(self):
-        return self.doc_name
-
     def open_doc(self):
         if self.doc_type == 'xls':
             self.doc = rows.import_from_xls(self.doc)
