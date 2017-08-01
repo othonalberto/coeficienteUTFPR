@@ -15,7 +15,7 @@ class Gpa(object):
                 self.gradesTimesHours.append(item.media*item.cht_3)
                 self.hours += item.cht_3
 
-    def new_subject(self, Subject):
+    def insert_subject(self, Subject):
         self.gradesTimesHours.append(Subject.grade * Subject.hours)
         self.hours += Subject.hours
 

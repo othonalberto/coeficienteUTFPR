@@ -5,6 +5,7 @@ import rows
 sys.path.append('../')
 import document as d
 
+
 def test_init():
     obj = d.Document("document.xls")
 
@@ -28,10 +29,11 @@ def test_define_type():
 
     assert obj.doc_type == "xls"
 
+
 def test_open_doc():
     obj = d.Document("document.xls")
-    
+
     obj.open_doc()
 
-    assert type(obj.doc) == type(
+    assert type(obj.doc) == isinstance(
             rows.import_from_xls(obj.doc_name + '.' + obj.doc_type))

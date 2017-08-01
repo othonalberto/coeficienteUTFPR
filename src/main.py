@@ -10,7 +10,7 @@ def main():
     my = gpa.Gpa()
     # how to add a new subject
     example = s.Subject(6.6, 30)
-    my.new_subject(example)
+    my.insert_subject(example)
 
     my.set_gpa(grades)
 

@@ -6,6 +6,7 @@ import gpa
 import subject
 import document as d
 
+
 def test_create():
     obj = gpa.Gpa()
 
@@ -22,17 +23,17 @@ def test_register():
     doc.open_doc()
 
     obj.register(doc)
-    
+
     assert obj.hours == 150
     assert obj.gradesTimesHours[0] == 801
 
 
-def test_new_subject():
+def test_insert_subject():
     subj = subject.Subject(10, 5)
 
     obj = test_create()
 
-    obj.new_subject(subj)
+    obj.insert_subject(subj)
 
     assert obj.hours == 5
     assert obj.gpa == 0

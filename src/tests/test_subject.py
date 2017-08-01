@@ -5,7 +5,7 @@ sys.path.append('../')
 import subject
 
 
-def test_create():
+def test_init():
     obj = subject.Subject(10, 5)
 
     assert obj.grade == 10
@@ -15,7 +15,7 @@ def test_create():
 
 
 def test_set_grade():
-    obj = test_create()
+    obj = test_init()
 
     obj.set_grade(8)
 
@@ -23,7 +23,7 @@ def test_set_grade():
 
 
 def test_set_hours():
-    obj = test_create()
+    obj = test_init()
 
     obj.set_hours(20)
 
@@ -31,12 +31,12 @@ def test_set_hours():
 
 
 def test_get_grade():
-    obj = test_create()
+    obj = test_init()
 
     assert obj.grade == obj.get_grade()
 
 
 def test_get_hours():
-    obj = test_create()
+    obj = test_init()
 
     assert obj.hours == obj.get_hours()
