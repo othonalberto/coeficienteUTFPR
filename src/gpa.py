@@ -27,4 +27,4 @@ class Gpa(object):
         self.gpa = (sum(self.gradesTimesHours) / (10*self.hours))
 
     def get_gpa(self):
-        return self.gpa
+        return round(self.gpa, 4)
