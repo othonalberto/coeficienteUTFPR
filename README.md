@@ -20,21 +20,21 @@ python3 ./src/main.py
 
 ## Como utilizar
     # para ler um documento
-    notas = document.Document('nomeArquivo.xls')
+    notas = documento.Documento('nomeArquivo.xls')
 
     # calcular o coeficiente
-    coef = gpa.Gpa()
-    coef.set_gpa(notas) # quando um documento é importado é necessário passá-lo para a função
+    coef = coeficiente.()
+    coef.gerar_coeficiente(notas) # quando um documento é importado é necessário passá-lo para a função
 
     # adicionar notas
-    novaNota = subject.Subject(10, 90)
+    novaNota = materia.Materia(10, 90)
 
     # gerar coeficiente atualizado
-    coef.insert_subject(novaNota)
-    coef.set_gpa()
+    coef.inserir_materia(novaNota)
+    coef.gerar_coeficiente()
 
     # printar coeficiente
-    print(coef.get_gpa())
+    print(coef.retorna_coeficiente())
 
 ### ATENÇÃO! 
 
