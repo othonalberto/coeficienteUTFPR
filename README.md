@@ -23,7 +23,7 @@ python3 ./src/main.py
     notas = documento.Documento('nomeArquivo.xls')
 
     # calcular o coeficiente
-    coef = coeficiente.()
+    coef = coeficiente.Coeficiente()
     coef.gerar_coeficiente(notas) # quando um documento é importado é necessário passá-lo para a função
 
     # adicionar notas

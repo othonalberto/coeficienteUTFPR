@@ -1,20 +1,12 @@
 #!/usr/bin/env python
 
-import document as d
-import subject as s
-import gpa
-
+import documento as d
+import materia as m
+import coeficiente as c
 
 def main():
-    grades = d.Document('document.xls')
-    my = gpa.Gpa()
-    # how to add a new subject
-    example = s.Subject(6.6, 30)
-    my.insert_subject(example)
+    # faça o tem que ser feito aqui
 
-    my.set_gpa(grades)
-
-    print(my.get_gpa())
 
 
 if __name__ == '__main__':
