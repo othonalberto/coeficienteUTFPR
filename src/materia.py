@@ -8,7 +8,7 @@ class Materia(object):
                     "Não é possível uma matéria ter {} horas." .format(hours)
             )
 
-        if nota < 0 or nota> 10:
+        if nota < 0 or nota > 10:
             raise Exception("Não é possível tirar {}." .format(grade))
 
         self.nota = nota

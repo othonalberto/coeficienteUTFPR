@@ -3,12 +3,12 @@
 
 class Coeficiente(object):
     def __init__(self):
-        self.horas= 0
+        self.horas = 0
         self.notasVezesHoras = []
         self.coeficiente = 0
 
-    def registrarDoc(self, Documento):
-        x = Documento.doc
+    def registrar_doc(self, Documento):
+        x = Documento.retorna_doc()
 
         for item in x:
             if item.cht_3 is not None and item.media is not None:
