@@ -17,22 +17,22 @@ python3 main.py
 ## Como utilizar
 Recomendo salvar as planilhas com as notas em ``/arquivos``
 
-# para ler um documento
-notas = documento.Documento('arquivos/nomeArquivo.xls')
+    # para ler um documento
+    notas = documento.Documento('arquivos/nomeArquivo.xls')
 
-# calcular o coeficiente
-coef = coeficiente.Coeficiente()
-coef.gerar_coeficiente(notas) # quando um documento é importado é necessário passá-lo para a função
+    # calcular o coeficiente
+    coef = coeficiente.Coeficiente()
+    coef.gerar_coeficiente(notas) # quando um documento é importado é necessário passá-lo para a função
 
-# adicionar notas
-novaNota = materia.Materia(10, 90)
+    # adicionar notas
+    novaNota = materia.Materia(10, 90)
 
-# gerar coeficiente atualizado
-coef.inserir_materia(novaNota)
-coef.gerar_coeficiente()
+    # gerar coeficiente atualizado
+    coef.inserir_materia(novaNota)
+    coef.gerar_coeficiente()
 
-# printar coeficiente
-print(coef.retorna_coeficiente())
+    # printar coeficiente
+    print(coef.retorna_coeficiente())
 
 Em ``main.py`` há um exemplo, da maneira que utilizo.
 
