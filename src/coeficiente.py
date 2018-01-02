@@ -22,7 +22,7 @@ class Coeficiente(object):
     def gerar_coeficiente(self, Documento=None):
         if Documento is not None:
             Documento.abre_doc()
-            self.registrarDoc(Documento)
+            self.registrar_doc(Documento)
 
         self.coeficiente = (sum(self.notasVezesHoras) / (10*self.horas))
         

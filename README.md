@@ -4,42 +4,42 @@
 
 Arquivo exemplo: `` document.xls ``
 
-Extensões suportadas: xls, xlsx e ods. 
-
-Graças a: [Rows](https://github.com/turicas/rows)
+Extensões suportadas: xls, xlsx e ods. Graças a [Rows](https://github.com/turicas/rows)
 
 ---
 
 Para rodar: (recomendo fortemente o uso de virtualenv)
-```
+
 pip3 install -r requirements.txt
 
-python3 ./src/main.py
-
-```
+python3 main.py
 
 ## Como utilizar
-    # para ler um documento
-    notas = documento.Documento('nomeArquivo.xls')
+Recomendo salvar as planilhas com as notas em ``/arquivos``
 
-    # calcular o coeficiente
-    coef = coeficiente.Coeficiente()
-    coef.gerar_coeficiente(notas) # quando um documento é importado é necessário passá-lo para a função
+# para ler um documento
+notas = documento.Documento('arquivos/nomeArquivo.xls')
 
-    # adicionar notas
-    novaNota = materia.Materia(10, 90)
+# calcular o coeficiente
+coef = coeficiente.Coeficiente()
+coef.gerar_coeficiente(notas) # quando um documento é importado é necessário passá-lo para a função
 
-    # gerar coeficiente atualizado
-    coef.inserir_materia(novaNota)
-    coef.gerar_coeficiente()
+# adicionar notas
+novaNota = materia.Materia(10, 90)
 
-    # printar coeficiente
-    print(coef.retorna_coeficiente())
+# gerar coeficiente atualizado
+coef.inserir_materia(novaNota)
+coef.gerar_coeficiente()
 
-### ATENÇÃO! 
+# printar coeficiente
+print(coef.retorna_coeficiente())
+
+Em ``main.py`` há um exemplo, da maneira que utilizo.
+
+### ATENÇÃO!
 
 Este projeto foi criado por mim por três motivos:
- 
+
 1. Aprender Python;
 2. diversão;
 3. ser algo útil para mim.
